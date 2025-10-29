@@ -93,6 +93,8 @@
         transition: all 0.3s ease-out;
         position: relative;
         border: 2px solid transparent;
+        display: flex;
+        gap: 1.5rem;
       }
 
       .card:hover,
@@ -124,29 +126,38 @@
         font-weight: 600;
       }
 
+      .card-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
       .card-description {
         color: #666;
-        margin-bottom: 1.25rem;
+        margin-bottom: 0;
         font-size: 0.95rem;
       }
 
       .card-links {
         display: flex;
-        gap: 0.75rem;
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 0.5rem;
+        min-width: 130px;
       }
 
       .card-link {
-        display: inline-flex;
+        display: flex;
         align-items: center;
         gap: 0.4rem;
-        padding: 0.4rem 0.9rem;
+        padding: 0.5rem 0.75rem;
         background-color: #f5f5f5;
         border-radius: 8px;
         text-decoration: none;
         color: #555;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         font-weight: 500;
+        width: 100%;
+        justify-content: flex-start;
       }
 
       .card-link:hover,
@@ -246,8 +257,10 @@
         <h2 class="section-title">Web Sites</h2>
         <div class="cards-grid">
           <article class="card">
-            <h3 class="card-title">Diatonic</h3>
-            <p class="card-description">Interactive music theory web application for learning scales, chords, and harmonic relationships.</p>
+            <div class="card-content">
+              <h3 class="card-title">Diatonic</h3>
+              <p class="card-description">Interactive music theory web application for learning scales, chords, and harmonic relationships.</p>
+            </div>
             <div class="card-links">
               <a href="https://diatonic.vegardege.com" class="card-link website" target="_blank" rel="noopener">Live Site</a>
               <a href="https://github.com/vegardege/diatonic" class="card-link github" target="_blank" rel="noopener">GitHub</a>
@@ -255,8 +268,10 @@
           </article>
 
           <article class="card">
-            <h3 class="card-title">BookBear</h3>
-            <p class="card-description">Web page displaying an author's most popular works using Wikimedia pageview data.</p>
+            <div class="card-content">
+              <h3 class="card-title">BookBear</h3>
+              <p class="card-description">Web page displaying an author's most popular works using Wikimedia pageview data.</p>
+            </div>
             <div class="card-links">
               <a href="https://bookbear.vegardege.com" class="card-link website" target="_blank" rel="noopener">Live Site</a>
               <a href="https://github.com/vegardege/bookbear" class="card-link github" target="_blank" rel="noopener">GitHub</a>
@@ -270,8 +285,10 @@
         <h2 class="section-title">Libraries</h2>
         <div class="cards-grid">
           <article class="card">
-            <h3 class="card-title">Kamasi</h3>
-            <p class="card-description">TypeScript music theory library for working with scales, modes, chords, and intervals.</p>
+            <div class="card-content">
+              <h3 class="card-title">Kamasi</h3>
+              <p class="card-description">TypeScript music theory library for working with scales, modes, chords, and intervals.</p>
+            </div>
             <div class="card-links">
               <a href="https://github.com/vegardege/kamasi" class="card-link github" target="_blank" rel="noopener">GitHub</a>
               <a href="https://www.npmjs.com/package/kamasi" class="card-link npm" target="_blank" rel="noopener">npm</a>
@@ -279,8 +296,10 @@
           </article>
 
           <article class="card">
-            <h3 class="card-title">Diatonic Piano</h3>
-            <p class="card-description">Interactive SVG piano component for React applications with customizable styling.</p>
+            <div class="card-content">
+              <h3 class="card-title">Diatonic Piano</h3>
+              <p class="card-description">Interactive SVG piano component for React applications with customizable styling.</p>
+            </div>
             <div class="card-links">
               <a href="https://github.com/vegardege/diatonic-piano" class="card-link github" target="_blank" rel="noopener">GitHub</a>
               <a href="https://www.npmjs.com/package/diatonic-piano" class="card-link npm" target="_blank" rel="noopener">npm</a>
@@ -288,8 +307,10 @@
           </article>
 
           <article class="card">
-            <h3 class="card-title">PVDuck</h3>
-            <p class="card-description">Python library to aggregate and analyze Wikimedia pageview dumps efficiently using DuckDB.</p>
+            <div class="card-content">
+              <h3 class="card-title">PVDuck</h3>
+              <p class="card-description">Python library to aggregate and analyze Wikimedia pageview dumps efficiently using DuckDB.</p>
+            </div>
             <div class="card-links">
               <a href="https://github.com/vegardege/pvduck" class="card-link github" target="_blank" rel="noopener">GitHub</a>
               <a href="https://hub.docker.com/r/vegardege/pvduck" class="card-link docker" target="_blank" rel="noopener">Docker Hub</a>
@@ -297,8 +318,10 @@
           </article>
 
           <article class="card">
-            <h3 class="card-title">PVStream</h3>
-            <p class="card-description">High-performance Rust library with Python bindings for streaming, parsing, and filtering Wikimedia pageview dumps.</p>
+            <div class="card-content">
+              <h3 class="card-title">PVStream</h3>
+              <p class="card-description">High-performance Rust library with Python bindings for streaming, parsing, and filtering Wikimedia pageview dumps.</p>
+            </div>
             <div class="card-links">
               <a href="https://github.com/vegardege/pvstream" class="card-link github" target="_blank" rel="noopener">GitHub</a>
               <a href="https://crates.io/crates/pvstream" class="card-link crates" target="_blank" rel="noopener">crates.io</a>
@@ -312,8 +335,10 @@
         <h2 class="section-title">Misc</h2>
         <div class="cards-grid">
           <article class="card">
-            <h3 class="card-title">MonsieurM</h3>
-            <p class="card-description">Automated solver for femkjappe.no puzzles using large language models.</p>
+            <div class="card-content">
+              <h3 class="card-title">MonsieurM</h3>
+              <p class="card-description">Automated solver for femkjappe.no puzzles using large language models.</p>
+            </div>
             <div class="card-links">
               <a href="https://github.com/vegardege/monsieurm" class="card-link github" target="_blank" rel="noopener">GitHub</a>
               <a href="https://hub.docker.com/r/vegardege/monsieurm" class="card-link docker" target="_blank" rel="noopener">Docker Hub</a>
