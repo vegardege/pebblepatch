@@ -138,26 +138,26 @@ body {
 }
 
 .card-link.website::before {
-	background-image: url("public/web.png");
+	background-image: url("icons/web.png");
 }
 .card-link.github::before {
-	background-image: url("public/github.png");
+	background-image: url("icons/github.png");
 }
 .card-link.npm::before {
-	background-image: url("public/npmjs.png");
+	background-image: url("icons/npmjs.png");
 }
 .card-link.pypi::before {
-	background-image: url("public/pypi.png");
+	background-image: url("icons/pypi.png");
 }
 .card-link.crates::before {
-	background-image: url("public/cratesio.png");
+	background-image: url("icons/cratesio.png");
 }
 .card-link.docker::before {
-	background-image: url("public/docker.png");
+	background-image: url("icons/docker.png");
 }
 .card-link.linkedin::before {
-	background-image: url("public/linkedin.png");
+	background-image: url("icons/linkedin.png");
 }
 .card-link.email::before {
-	background-image: url("public/email.png");
+	background-image: url("icons/email.png");
 }
