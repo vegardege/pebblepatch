@@ -147,7 +147,7 @@ body {
 	background-image: url("public/npmjs.png");
 }
 .card-link.pypi::before {
-	background-image: url("public/pypi.svg");
+	background-image: url("public/pypi.png");
 }
 .card-link.crates::before {
 	background-image: url("public/cratesio.png");
